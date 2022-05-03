@@ -1,3 +1,3 @@
 from flask import Blueprint
-main = Blueprint('model',__name__)
+main = Blueprint('main',__name__)
 from .import views,error
