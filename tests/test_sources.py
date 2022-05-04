@@ -10,8 +10,9 @@ class SourceTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_source = Source('cnn','CNN.','View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN','https://www.nytimes.com/2018/08/31/sports/tennis/us-open-results.html')
-
+        self.new_source = Source('bbc','BBC.',
+        'Haiti 400 Mawozo gang leader extradited to US','Haitian authorities say leader of 400 Mawozo gang was extradited to the US for kidnapping Americans.','http://www.bbc.co.uk/news/world-latin-america-61315533')
+        
     def test_instance(self):
         '''
         Test to check creation of new article Source instance

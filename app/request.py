@@ -16,10 +16,11 @@ def configure_request(app):
     
     
     def get_source():
+      '''
+    
+    Function that gets the json response to url request
     '''
     
-Function that gets the json response to url request
-    '''
     get_source_url= source_url.format(api_key)
     # print(get_source_url)
     with urllib.request.urlopen(get_source_url) as url:
@@ -55,7 +56,7 @@ def process_results(source_list):
     return source_results
 
 def article_source(id):
-    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(id,api_key)
+    article_source_url= 'https://newsapi.org/v2/top-headlines?country=us={}&apiKey={}'.format(id,api_key)
     print(article_source_url)
     with urllib.request.urlopen(article_source_url) as url:
         article_source_data = url.read()

@@ -10,7 +10,7 @@ class ArticleTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_article = Article('Naila-Jean Meyers and Scott Cacciola','In the 30th professional match between the sisters, Serena defeated Venus in the third round. Rafael Nadal, Juan Martin del Potro and Sloane Stephens also won Friday.','2018-09-01T05:22:26Z','https://www.nytimes.com/2018/08/31/sports/tennis/us-open-results.html','https://static01.nyt.com/images/2018/09/01/sports/01openlive7/01openlive7-facebookJumbo.jpg','US Open 2018 Results')
+        self.new_article = Article('Brian Cheung','The Fed is about to do something it has not done in two decades: Morning Brief - Yahoo Finance','2022-05-04T10:00:29Z','https://finance.yahoo.com/news/the-fed-is-about-to-do-something-it-has-not-done-in-two-decades-morning-brief-100029366.html','https://s.yimg.com/ny/api/res/1.2/OkT5vhOIJnzAFu.rNM9ELA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2022-05/a91676e0-cb1b-11ec-8efe-6491b7708537')
 
     def test_instance(self):
         '''
